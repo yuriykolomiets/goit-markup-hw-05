@@ -550,10 +550,8 @@ color: #FFFFFF;
 .button { 
     font-family: inherit;
     border-radius: 4px;
-    transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -686,6 +684,9 @@ img {
 .last-menu:hover .animation {
     transform: translateY(0);
 }
+.last-menu:focus .animation {
+    transform: translateY(0);
+}
 .animation-text {
     
     font-weight: 400;
@@ -710,11 +711,12 @@ img {
 
     z-index: 2;
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 .modal {
    position: absolute;
