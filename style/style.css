@@ -452,6 +452,9 @@ color: #FFFFFF;
 .society-foot {
     display: flex;
 }
+.white {
+    fill: #FFFFFF;
+}
 .foot {
     background-color: #2F303A;
     color: #FFFFFF;
